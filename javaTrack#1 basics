@@ -1,0 +1,25 @@
+package itsjavaproject;
+
+
+// Class is what'll we like to call as collections of related CODE.
+// Every sets of syntax inside the curly braces on outer Main belongs to that class.
+// There's also a main method. it'll goes AND executes first than other code.
+// There are two distinguish differences between printLn and print.
+// printLn adds (new lines) characters after outputting your text.. print doesn't.
+
+
+public class Main {
+ public static void main(String[] args) {
+	 System.out.println("\"Java is fun!\"");
+ }
+}
+
+// However, we could still try getting "new-line" with print statement by adding escape sequences.
+// Escape sequence serves with backslashes "\".
+/*
+ * \n -> New-line characters
+ * \t -> Adding tab
+ * \ \ -> Allowing us to print double-quotations.. Also works to add backslashes into the string.
+ */
+
+
