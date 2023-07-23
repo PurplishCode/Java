@@ -1,0 +1,21 @@
+package itsjavaproject;
+
+ // Expression in Java: Operands & Operators.
+// Operands: values, variables, quantity, numbers
+// Operators : Arithmatics symbols (Example: + - * / %)
+
+public class Main {
+	public static void main(String[] args) {
+		double friends = 10;
+		
+		// friends = friends + 1; Add
+		// friends = friends - 1; Subtract
+		// friends = friends * 2; Multi
+		// friends = friends / 2; division (in default, we'll trunk our division as INT, that means decimal propotions are annihilated.) Let's say for example, we're dividing 3 / 10. what'll happend? 3.33? No, it's 3.
+		
+		// friends = friends % 3; Module (Actual Result: 1) It's basically of what's left.
+		friends = (double)friends / 3; // We could convert our datatype into different ones! With the help of (datatype).
+		
+		System.out.println(friends);
+		}
+}
