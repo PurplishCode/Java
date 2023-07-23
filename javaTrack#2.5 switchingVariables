@@ -1,0 +1,22 @@
+package itsjavaproject;
+
+public class Main {
+public static void main(String[] args) {
+	// Switching variables! The variable still keeps their old value even after switching (Or, assigning it with different variables). Basically just copies it from one to another.
+	
+   String switches;
+   
+   String switch1 = "Yolo";
+   
+   String switch2 = "Yele";
+   
+   switches = switch1;
+   switch1 = switch2;
+   switch2 = switches;
+
+   System.out.println(switches);
+   System.out.println(switch1);
+   System.out.println(switch2);
+   
+ }
+}
