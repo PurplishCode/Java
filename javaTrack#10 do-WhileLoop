@@ -1,0 +1,24 @@
+package itsjavaproject;
+
+import java.util.Scanner;
+// while-loop! (And do-while).
+// While loop executes a block of code, as long the condition remains true. (+Addition .isBlank())
+public class Main {
+	
+	public static void main(String[]args) {
+		Scanner scanner = new Scanner(System.in);
+       String username = "";
+        
+       
+       // while-loop will keeps on continuing until the condition isn't true anymore.
+       // With the addition of do, we'll execute the code-syntax atleast once.
+        do {
+        	System.out.print("Please input your name:");
+        	 username = scanner.nextLine();
+        	
+        } while(username.isBlank());
+        
+        System.out.println("Good morning, "+ username + "!");
+	}
+
+}
