@@ -1,0 +1,23 @@
+package itsjavaproject;
+
+// Importing Random class from java utility.
+import java.util.Random;
+
+
+
+// Generating Random values! (with INT, BOOLEAN DOUBLES). (We don't actually generate random values, they're pseudonumbers).
+// To acqure access towards Random class, we'll have to create the variable from its instances.
+
+public class Main {
+	public static void main(String[] args) {
+		
+		
+		Random random = new Random();
+	   
+		// int x = random.nextInt(5) + 1; // nextInt within the random class gives different result than our Scanner.
+	   // double x = random.nextDouble(); // nextDouble default value is between 0 - 1
+	   boolean x = random.nextBoolean(); // Basically generates either true or false.
+	   
+		System.out.println(x);
+	}
+}
