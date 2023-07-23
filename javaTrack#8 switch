@@ -1,0 +1,23 @@
+package itsjavaproject;
+
+import javax.swing.JOptionPane;
+// switch!
+// It's basically, statement that allows a variable to be tested for equality agaisnt list of values.
+// It's considerably better to use switch statement than IF when it comes to finding tons of matchs.
+
+public class Main {
+	public static void main(String[] args) {
+	String day = JOptionPane.showInputDialog("Insert your favorite day!"); // Taking users input.
+	switch(day) // Testing a variable to its equality against list of values.
+	{
+	case "Monday": System.out.println("It's monday!"); break;
+	case "Tuesday": System.out.println("It's tuesday!"); break;
+	case "Wednesday": System.out.println("It's Wednesday!"); break;
+	case "Thursday": System.out.println("It's Thursday!"); break;
+	case "Friday": System.out.println("It's Friday!"); break;
+	case "Saturday": System.out.println("It's Saturday!"); break;
+	default: System.out.println(day + " Is not a valid day."); break;
+	}
+	
+ 	}
+}
