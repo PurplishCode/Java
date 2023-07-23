@@ -1,0 +1,21 @@
+package itsjavaproject;
+
+// For-looping!
+
+// There's total of 3 statement inside of for-loop(parentheses).
+
+// Executes a block of code for limited amount of time.
+// We initilized count as int (and amount), if count is (greater/lesser) or equals to (certain amount), increment/decrement until it reaches the certain amount of time.
+public class Main {
+	
+	public static void main(String[]args) {
+		
+		for(int count=10; count>=0; count--) {
+			System.out.println(count);
+			if(count == 0) {
+				System.out.println("Happy new year!!");
+			}
+		}
+	}
+
+}
