@@ -1,0 +1,44 @@
+package itsjavaproject;
+
+// LOGICAL OPERATOR!
+// Used to connect two or more expressions (Operators & Operands)
+// && - (AND) Both condition must be TRUE.
+// || - (OR) Either condition must be TRUE.
+// ! - (NOT) Reversing boolean's value of condition.
+import java.util.Scanner;
+
+
+public class Main {
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		int age = 16;
+		int age1 = 15;
+		if(age == 16 && age == 15) // Since one condition isn't true, it'll skip ahead the IF statement. 
+			{
+			System.out.println("You're pretty young.");
+		} else if(age == 16 || age == 15) // One of the condition is TRUE, then it'll executes the IF-ELSE codeblock.
+		{
+			System.out.println("You're pretty young though! ");
+		}
+		
+		
+		if(!(age1 >=16)) // IF age1 ISN'T greater or equals to 16, executes this condition.
+			{
+			System.out.println("You're below the age!");
+		}
+		
+		// Fun practice!
+		// .equals checks if two strings are equal, if they matches. Then it'll return true, otherwise false.
+		// Scanner.next() reads only the first token(words) then stops after encountering whitespaces.
+		System.out.println("You're playing a video games! \n Press Q to exit.");
+		String decision = scanner.next();
+		
+		if(!decision.equals("q") && decision.equals("Q")) {
+			System.out.println("Let's continue folks.");
+		} else {
+			System.out.println("You've exited the game.");
+		}
+		scanner.close();
+	}
+}
