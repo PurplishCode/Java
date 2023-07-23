@@ -1,0 +1,41 @@
+package itsjavaproject;
+
+import java.util.Scanner;
+
+// Fun practice.. Simple program of Math classes!
+// Quick-heads up: Assigning double into integer would cause mismatch. So, we'll have to convert the datatype specifically into any desired one.
+// In this scenario, (double will be converted into int after we re-assign our value double into int);
+
+
+public class Main {
+	public static void main(String[] args) {
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		/*
+		double x = 3.14;
+        double y = -10;
+        
+        int result = (int) Math.floor(x);
+        
+        double maximum = Math.max(x, y); // X still holds the double value, in the result part.. result just copies X value converting it into integer.
+        */
+		
+       
+        System.out.println("Insert your value of side A:");
+        double usersInput = scanner.nextDouble();
+        
+        scanner.nextLine();
+        
+        System.out.println("Insert your value of side B:");
+        
+        double radius = scanner.nextDouble();
+        
+        double result = Math.sqrt((usersInput * usersInput)+ (radius * radius));
+        
+              
+       // System.out.println(maximum);
+        System.out.println(result);
+	scanner.close();
+	}
+}
