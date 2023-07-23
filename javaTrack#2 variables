@@ -1,0 +1,71 @@
+// Variables!
+// To either create variables, you'll have to specifically have to write the data-type for that variables.. Or (initilization)
+// String for "", Integer for numeric, Boolean for truth / false.
+
+// There are 8 PRIMITIVE data-type and 1 special reference data-type (String).
+
+/*
+ * Boolean -> size: 1bit (Only holds two value) -> Value (true or false) [Primitive]
+ * byte -> size: 1 byte -> Value -128 to 127 (Holding integer value) [Primitive]
+ * short -> size: 2 byte -> Value -32,768 to 32,767 [Primitive]
+ * int -> size: 4 bytes -> Value -2 billion to 2 billion [Primitive]
+ * long -> size: 8 bytes -> Value -9 quintilion to 9 quintilion.
+ * 
+ * float -> size: 4 bytes -> Fractional number upto 6-7 digits (Example: 3.123456f) [Primitive]
+ * double -> size: 8 bytes -> Fractional number upto 15 digits (Example: 3.142345124325123) [Primitive]
+ * 
+ * 
+ * char -> size: 2 bytes -> Single-characters / letter / ASCII value (Example: 'f') Common conventions of signing char variables is surronded with one-single quotations.[Primitive] 
+ * string -> size: varies -> A sequence of characters (Example: "Hello Mom!") [reference]
+ */
+
+// PRIMITIVE vs REFERENCE
+/*
+ * Primitive has 8 type, Reference is unlimited (user-defined)
+ * Primitive can't store upto more 1 value, Reference can holds more than 1.
+ * Primitive is faster, Reference is slower.
+ * Primitive stores data, Reference stores memory.
+ * Primitive uses less memory, Reference uses more memory.
+ * 
+ */
+
+package itsjavaproject;
+
+
+public class Main {
+	// Since it's outside of main method, we'll have to type static for our main method to acquire access towards the outer class.
+	
+	static int x = 15; // Declaration
+	// Assignment 
+	 
+	static String sym = "dada" ;
+	int num1 = 3;
+	int num2 = 4;
+ public static void main(String[] args) {
+	 int num4 = 6;
+	 char symbol = '$'; // Common convention for char is single-quotation surronding the string.
+	 
+	 float floaty = 2.13333456f; // Common convention to assign value as float is "f" at the end.
+	 double douba = 2.1111111111111;
+	 long supa = 300000000000L; // long requires "L" at the end.
+	 boolean yeah = false;
+	 
+	 System.out.println(yeah);
+	 System.out.println(douba);
+	 System.out.println(floaty);
+	 System.out.println(supa);
+	 System.out.println(symbol);
+	 System.out.println("Good morning, \n" + sym + "!");
+	 System.out.println(x); // Accessing static variable OUTSIDE of main method.
+	 System.out.println(num4); // Acessing local variable INSIDE of main method.
+	 }
+
+ 
+ 
+}
+
+
+
+class Yori extends Main {
+	
+}
