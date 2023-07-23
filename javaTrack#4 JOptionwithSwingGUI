@@ -1,0 +1,28 @@
+package itsjavaproject;
+
+// Importing our JOptionPane within our javax classes.
+import javax.swing.JOptionPane;
+
+// Basic grasp of GUI (Graphic User Interface) using java swing utility!
+
+// .showInputDialog brings up Input GUI box, basically IF users inserted anything inside (it'll convert anything into String), and will be stored within the JOptionPane (Only if it's a reference value, String. Unless you parse it.) (or rather, our variables we've declared) also, it returns a string.
+
+// .showMessageDialog displays the message, it can either be value / string of texts / or anything related.
+
+public class Main {
+	public static void main(String[] args) {
+		String name = JOptionPane.showInputDialog("Enter your name"); // .showInputDialog creates a GUI-dialouge box of our String, or rather a questions.
+	    JOptionPane.showMessageDialog(null, "Good morning, " + name); // Brings up an information-message dialog titled "Message".. This also has two parameters, first one is parentComponent! if set to null.. Then we're using default frame (Message box), then our second parameters would be our values / variables.
+	    
+	    int age = 
+	    		Integer.parseInt(JOptionPane.showInputDialog("How old are you?"));    // One way to solve this mismatch issues, we'll parse our JOption into integer.. Same goes with double, or any other Primitive value.
+	    
+	    JOptionPane.showMessageDialog(null, "Youre.. " + age + " years old!");
+	  
+	    double height = Double.parseDouble(JOptionPane.showInputDialog("How tall are you?"));
+	    JOptionPane.showMessageDialog(null, "You're " + height + "cm tall!");
+	    
+	    
+	    System.out.println("Based on your information.. Your name is, " + name + ". \nYou're also " + age + " years old!");
+	}
+}
