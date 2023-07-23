@@ -1,0 +1,37 @@
+// Receiving users input with java.util.Scanner import!
+
+package itsjavaproject;
+
+import java.util.Scanner;
+// This imports java utility Scanner.
+
+// Hey quick heads-up, we can only have 1 public class inside of file. That (public) class can be serve as
+// reference point (or to be invoked), and public class needs to have same name as our file.
+
+public class Main {
+public static void main(String[] args) {
+    // Scanner is our obj, then name it as scanner.
+	Scanner scanner = new Scanner(System.in);
+	
+	System.out.print("What's your name?\n"); // scanner.nextLine() takes up the users input, (which means it'll clears up the new-line after we pressed enter since it READS all of it's value) Then afterwards our Scanner would be empty.
+	// However, IF with the nextInt() method, it only reads our numeric propotions and not the escape sequence "\n" after users pressed enter (Since we're not detecting any line with nextLine), This'll cause our programs to think we're just pressing enter again onto the next nextLine.. Which ends up skipping ahead.
+	// Quick solve for this.. Is to clarify our scanner.nextLine() once more after nextInt() is done.
+ 	// It's also worth noting, we'll have to specify of what're trying to suggest our users input.. (Example: "What's your name?" Expected result: Name provided);
+	
+	String name = scanner.nextLine();
+	
+	System.out.println("How old are you? ");
+	int age = scanner.nextInt();
+	scanner.nextLine();
+	System.out.println("What's your hobby?");
+	String hobby = scanner.nextLine();
+	
+	System.out.print("Your dream is..?");
+	String dream = scanner.nextLine();
+	
+	System.out.println("Your name is.. " + name );
+	System.out.println("You're.." + age + " years old!");
+	System.out.println(hobby + " is your hobby!");
+	System.out.println("Your dream is.. " + dream + ".");
+ }
+}
