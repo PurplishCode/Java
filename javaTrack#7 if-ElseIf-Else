@@ -1,0 +1,20 @@
+package itsjavaproject;
+
+// IF-ELSE IF-ELSE Statement!
+// If => Performs a code block IF its condition evaluates true.
+
+public class Main {
+	public static void main(String[] args) {
+	 int age = 16;
+	
+	 // Conditioning IF our age is over or equals to 18..
+	 // IF has its special place. IF it's true, it'll skip anything else (even our ELSE-IF statement)
+		if(age >= 18) {
+			System.out.println("You're over 18 years old!");
+		} else if(age <= 16) // IF it's false, skipped through our IF and checking any other else-if statement.
+			{
+			System.out.println("You're under 18 years old!");
+		} else // IF everything is false, executes else. {
+			System.out.println("It's not a valid number..");
+		}
+	}
